@@ -1,1 +1,6 @@
-<app-layout></app-layout>
+<div (click)="hi()">{{ title }}</div>
+<div *ngFor="let i of users">
+  <div>id: {{ i.id }}</div>
+  <div>username: {{ i.username }}</div>
+  <div>password: {{ i.password }}</div>
+</div>
